@@ -1,3 +1,3 @@
 with(MonogenicCert):
 
-lprint(MonogenicCert:-bergCert(-1, -1/2, -1, -3/4));
+lprint(MonogenicCert:-bergCert(-2, 2, -1, 2));
