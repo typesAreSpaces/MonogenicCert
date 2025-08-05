@@ -177,7 +177,7 @@ export getStrictPos;
           op(interval)
         else
           interval
-        end if, [solve(f >= 0, x)])
+        end if, [solve(f >= 0, x)]);
 
     # TODO Process left part
     # TODO Process right part
