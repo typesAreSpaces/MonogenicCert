@@ -11,5 +11,6 @@ with(MonogenicCert):
 #lprint(MonogenicCert:-bergCert(-2, 1, -2, -1, x));
 #lprint(MonogenicCert:-bergCert(-1, 2, 1, 2, x));
 #lprint(MonogenicCert:-bergCert(-7/8,-1/8, -3/4, -1/4, x));
-lprint(MonogenicCert:-bergCert(-1,-1/2, -1, -3/4, x));
+#lprint(MonogenicCert:-bergCert(-1,-1/2, -1, -3/4, x));
+lprint(MonogenicCert:-bergCert(-2, 2, -1, 1, x));
 
