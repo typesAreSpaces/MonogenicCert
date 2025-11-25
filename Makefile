@@ -12,7 +12,8 @@ QUIET_MODE=
 
 .PHONY: clean all
 
-all: ${OUTPUT}
+all: 
+	@make ${OUTPUT}
 
 ${OUTPUT}: ${PROJECT_NAME}.mla ${TEST_FILE}
 	if [ -f ${LOG_FILE} ]; then rm ${LOG_FILE}; fi;
