@@ -32,15 +32,15 @@ export bergCert;
   bergCert := proc(a, b, c1, c2, x)
   local gamma0, gamma1;
     if c1+c2 > a + b then
-      gamma0 := 2/(b-a)*(b-(c1+c2)/2);
+      gamma1 := 2/(b-a)*(b-(c1+c2)/2);
     else 
       if c1+c2 < a + b then
-        gamma0 := 2/(b-a)*((c1+c2)/2 - a);
+        gamma1 := 2/(b-a)*((c1+c2)/2 - a);
       else
-        gamma0 := (c2-c1)^2/(b-a)^2;
+        gamma1 := (c2-c1)^2/(b-a)^2;
       end if;
     end if;
-    gamma1 := (x-c1)*(x-c2) - gamma0*(x-a)*(x-b);
+    gamma0 := (x-c1)*(x-c2) - gamma1*(x-a)*(x-b);
     return [gamma0, gamma1];
   end proc;
 
